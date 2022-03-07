@@ -55,7 +55,7 @@ const resolvers = {
             throw new AuthenticationError('You must be logged in to save a book.');
         },
 
-        deleteBook: async (parent, { book }, context) => {
+        removeBook: async (parent, { book }, context) => {
             if (!context.user) {
                 return User.findOneAndDelete(
                     { _id: context.user._id },
