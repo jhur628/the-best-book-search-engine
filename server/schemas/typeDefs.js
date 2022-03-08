@@ -44,4 +44,6 @@ input savedBook {
 }
 `
 
+module.exports = typeDefs
+
 //Input types: https://www.apollographql.com/docs/apollo-server/v2/schema/schema/#input-types
