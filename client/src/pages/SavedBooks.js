@@ -23,14 +23,18 @@ const SavedBooks = () => {
     }
 
     try {
-      
+      await removeBook({
+        variables: { bookId: bookId }
+      });
+
+      removeBookId(bookId)
     } catch (err) {
       console.error(err);
     }
   };
 
   // if data isn't here yet, say so
-  if (!userDataLength) {
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
