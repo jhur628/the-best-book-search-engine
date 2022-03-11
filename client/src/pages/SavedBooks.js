@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
@@ -24,9 +23,9 @@ const SavedBooks = () => {
 
     try {
       await removeBook({
-        variables: { bookId: bookId }
+        variables: { bookId }
       });
-
+      
       removeBookId(bookId)
     } catch (err) {
       console.error(err);
