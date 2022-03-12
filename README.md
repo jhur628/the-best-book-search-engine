@@ -5,6 +5,8 @@
 ## Description
 I made the Best Book Search Engine.
 
+This was an assignment for my boot camp. The code was provided, and I refactored it to become a MERN stack application.
+
 Has a friend ever recommended a book, but you already have a long list of books you want to read. What if there was an application to keep track of all of these wonderful books.
 
 Enter the Best Book Search Engine. Search books you want to read, and save them to a list. Read the book. Then, delete the book from your list. A simple application, but it gets the job done!
